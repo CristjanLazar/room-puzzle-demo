@@ -1,7 +1,7 @@
 ﻿/*
  * OnCollisionStayThreshold.cs
  * by: Cristjan Lazar
- * Date: 2018-08-09
+ * Date: 2018-08-10
  */
 
 using System.Collections;
@@ -48,8 +48,6 @@ namespace roompuzzledemo {
 
                 if (OnThresholdExceeded != null)
                     OnThresholdExceeded.Invoke();
-
-                Debug.Log("OnThresholdExceeded invoked!");
             }
             else {
                 if (!currentlyExceedingThreshold)
@@ -59,8 +57,6 @@ namespace roompuzzledemo {
 
                 if (OnThresholdUnder != null)
                     OnThresholdUnder.Invoke();
-
-                Debug.Log("OnThresholdUnder invoked!");
             }
         }
         #endregion

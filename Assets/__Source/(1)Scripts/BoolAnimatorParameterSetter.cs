@@ -1,7 +1,7 @@
 ﻿/*
  * BoolAnimatorParameterSetter.cs
  * by: Cristjan Lazar
- * Date: 2018-08-09
+ * Date: 2018-08-10
  */
 
 using System.Collections;
@@ -21,6 +21,10 @@ namespace roompuzzledemo {
         #endregion
 
         #region Methods
+        /// <summary>
+        /// Sets the assigned parameter to a value.
+        /// </summary>
+        /// <param name="value">Parameter value</param>
         public void SetParameter(bool value) {
             animator.SetBool(parameter, value);
         }
